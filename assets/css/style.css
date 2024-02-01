@@ -9,7 +9,7 @@
 :root {
     --site-text-first: rgba(0, 132, 253, 1);
     --site-text-second: rgba(101, 123, 142, 1);
-    --site-text-footer: rgba(255, 255, 255, 0.714);
+    --site-text-fird: rgba(255, 255, 255, 0.714);
     --site-bg-lightblue: rgba(181, 221, 255, 1);
     --site-bg-lightpurple: rgba(151, 146, 228, 1);
     --site-lighter: rgb(255, 255, 255);
@@ -30,7 +30,7 @@ ul {
 /* Utilities */
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ ul {
     text-align: center;
     border-radius: 1rem;
     width: fit-content;
-    
+
     &>a {
         text-decoration: none;
     }
@@ -78,57 +78,117 @@ nav {
 /* #region main */
 
 /* #region demo */
-#demo .row {
-    padding: 3rem 0;
-}
-#demo .card {
-    color: var(--site-text-second);
-    background-color: var(--site-bg-lightblue);
-    padding: 2rem;
-    border-radius: 1rem;
-    margin: 1rem;
-}
+#demo {
 
-#demo .card:not(.go_to_store) {
-    text-align: center;
-}
+    & .row {
+        padding: 3rem 0;
+    }
 
-#demo h3 {
-    color: var(--site-text-first);
-}
+    & .card {
+        color: var(--site-text-second);
+        background-color: var(--site-bg-lightblue);
+        padding: 2rem;
+        border-radius: 1rem;
+        margin: 1rem 0;
+    }
 
-#demo p {
-    padding: 1.5rem 0;
-}
+    & .card:not(.go_to_store) {
+        text-align: center;
+    }
+
+    & h3 {
+        color: var(--site-text-first);
+    }
+
+    & p {
+        padding: 1.5rem 0;
+    }
 
 
-#demo .btn {
-    background-color: var(--site-text-first);
-    padding: 0.5rem 2rem;
-    
-    &>a {
-        color: var(--site-lighter);
+    & .btn {
+        background-color: var(--site-text-first);
+        padding: 0.5rem 2rem;
+
+        &>a {
+            color: var(--site-lighter);
+        }
+    }
+
+    & img {
+        width: 100%;
+        padding-top: 1.5rem;
+        margin-bottom: -2rem;
+        display: block;
+    }
+
+    & .icon {
+        color: var(--site-text-first);
+        font-size: 4rem;
+        padding-bottom: 1rem;
     }
 }
 
-#demo img {
-    width: 100%;
-    padding-top: 1.5rem;
-    margin-bottom: -2rem;
-    display: block;
-}
+/* #endregion demo */
 
-#demo .icon {
-    color: var(--site-text-first);
-    font-size: 4rem;
-    padding-bottom: 1rem;
-}
-
-/* #region demo */
-
+/* #region planning */
 #planning {
+    color: var(--site-text-fird);
     background-color: var(--site-bg-lightpurple);
+    padding: 2rem 0;
 }
+
+.strategic {
+
+    & img {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    & h2 {
+        color: var(--site-lighter);
+        font-size: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    & p {
+        padding: 1rem 0;
+    }
+}
+
+.development {
+    color: var(--site-darker);
+    background-color: var(--site-lighter);
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 1rem 0;
+
+    & img {
+        width: 100%;
+    }
+
+    & h3 {
+        padding: 1rem 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    & p {
+        font-style: italic;
+        padding-bottom: 2rem;
+    }
+
+    & i {
+        font-size: small;
+        font-weight: bolder;
+        background-color: var(--site-bg-lightpurple);
+        padding: 1rem 1.1rem;
+        border-radius: 50%;
+    }
+}
+
+/* #endregion planning */
+
 
 .testimonial {
     color: var(--site-lighter);
@@ -146,7 +206,7 @@ nav {
 /* #region footer */
 
 #site_footer {
-    color: var(--site-text-footer);
+    color: var(--site-text-fird);
     background-color: var(--site-darker);
     font-size: 0.8rem;
     text-align: center;
