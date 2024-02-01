@@ -39,9 +39,8 @@ ul {
 }
 
 .btn {
-    /* padding: 0.5rem 3rem; */
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     width: fit-content;
 
     &>a {
@@ -107,7 +106,7 @@ nav {
 
     & .btn {
         background-color: var(--site-text-first);
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 3rem;
 
         &>a {
             color: var(--site-lighter);
@@ -202,7 +201,7 @@ nav {
         font-size: 2rem;
         color: var(--site-bg-lightpurple);
         padding: 1rem 0;
-    } 
+    }
 
     & p {
         font-size: 1.1rem;
@@ -225,22 +224,22 @@ nav {
         aspect-ratio: 1;
         max-width: 60%;
         margin: auto;
-        
+
         background-position: center;
-        background-size: cover;    
+        background-size: cover;
     }
 
-& p {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-weight: 300;
-    padding: 1rem 0;
-}
+    & p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 300;
+        padding: 1rem 0;
+    }
 
     & h3 {
         font-size: 1.2rem;
         font-weight: 400;
-        
+
     }
 }
 
@@ -255,7 +254,63 @@ nav {
 #third_testimonial {
     background-image: url(../img/testimonial3.jpg);
 }
+
 /* #endregion testimonials */
+
+/* #region benefits */
+#benefits {
+    background-color: var(--site-bg-lightpurple);
+}
+
+.section_title {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    color: var(--site-lighter);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.benefit {
+    background-color: var(--site-lighter);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+
+    & * {
+        padding: 1rem 0;
+    }
+
+    & h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--site-bg-lightpurple);
+    }
+
+    & h3 {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: var(--site-bg-lightpurple);
+    }
+
+    & p {
+        font-size: 0, 7rem;
+        font-weight: 400;
+        color: var(--site-text-second);
+    }
+
+    & .btn {
+        background-color: var(--site-bg-lightpurple);
+        padding: 0.5rem 3rem;
+
+        &>a {
+            color: var(--site-lighter);
+        }
+    }
+}
+
+
+
+/* #endregion benefits */
 
 #get_started {
     color: var(--site-lighter);
