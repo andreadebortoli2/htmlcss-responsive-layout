@@ -30,15 +30,20 @@ ul {
 /* Utilities */
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-} */
+.btn {
+    /* padding: 0.5rem 3rem; */
+    text-align: center;
+    border-radius: 1rem;
+    width: fit-content;
+    
+    &>a {
+        text-decoration: none;
+    }
+}
 
 .col-12 {
     width: 100%;
@@ -72,10 +77,54 @@ nav {
 
 /* #region main */
 
+/* #region demo */
+#demo .row {
+    padding: 3rem 0;
+}
 #demo .card {
     color: var(--site-text-second);
     background-color: var(--site-bg-lightblue);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
 }
+
+#demo .card:not(.go_to_store) {
+    text-align: center;
+}
+
+#demo h3 {
+    color: var(--site-text-first);
+}
+
+#demo p {
+    padding: 1.5rem 0;
+}
+
+
+#demo .btn {
+    background-color: var(--site-text-first);
+    padding: 0.5rem 2rem;
+    
+    &>a {
+        color: var(--site-lighter);
+    }
+}
+
+#demo img {
+    width: 100%;
+    padding-top: 1.5rem;
+    margin-bottom: -2rem;
+    display: block;
+}
+
+#demo .icon {
+    color: var(--site-text-first);
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+/* #region demo */
 
 #planning {
     background-color: var(--site-bg-lightpurple);
