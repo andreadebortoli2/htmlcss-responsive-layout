@@ -224,7 +224,6 @@ nav {
         aspect-ratio: 1;
         max-width: 60%;
         margin: auto;
-
         background-position: center;
         background-size: cover;
     }
@@ -308,9 +307,68 @@ nav {
     }
 }
 
-
-
 /* #endregion benefits */
+
+/* #region about_us */
+#about_us {
+    padding-bottom: 4rem;
+
+& h2 ,& p ,& h3 {
+    padding: 1rem 0;
+}
+
+    & h2 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: var(--site-bg-lightpurple);
+    }
+
+    & p {
+        font-weight: 500;
+        line-height: 2rem;
+    }
+
+    & #ceo_pic {
+        border-radius: 50%;
+        aspect-ratio: 1;
+        max-width: 55%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: end;
+        margin: 3rem 0 1rem;
+
+        & i {
+            font-size: 4rem;
+            color: var(--site-bg-lightpurple);
+        }
+    }
+
+    & h3 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 2.5rem;
+        color: var(--site-bg-lightpurple);
+    }
+
+    & .btn {
+        background-color: var(--site-bg-lightpurple);
+        padding: 0.3rem 1rem;
+
+        &>a {
+            font-size: 0.9rem;
+            color: var(--site-lighter);
+        }
+    }
+}
+
+#ceo_pic {
+    background-image: url(../img/about.jpg);
+}
+
+
+/* #endregion about_us */
+
 
 #get_started {
     color: var(--site-lighter);
