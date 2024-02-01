@@ -10,6 +10,7 @@
     --site-text-first: rgba(0, 132, 253, 1);
     --site-text-second: rgba(101, 123, 142, 1);
     --site-text-fird: rgba(255, 255, 255, 0.714);
+    --site-text-highlighted: rgba(253, 193, 95, 1);
     --site-bg-lightblue: rgba(181, 221, 255, 1);
     --site-bg-lightpurple: rgba(151, 146, 228, 1);
     --site-lighter: rgb(255, 255, 255);
@@ -313,9 +314,11 @@ nav {
 #about_us {
     padding-bottom: 4rem;
 
-& h2 ,& p ,& h3 {
-    padding: 1rem 0;
-}
+    & h2,
+    & p,
+    & h3 {
+        padding: 1rem 0;
+    }
 
     & h2 {
         font-size: 2.8rem;
@@ -369,13 +372,57 @@ nav {
 
 /* #endregion about_us */
 
-
+/* #region get_started */
 #get_started {
     color: var(--site-lighter);
     background-color: var(--site-bg-lightpurple);
+    text-align: center;
+
+    & .card>* {
+        padding: 1rem 0;
+    }
+
+    & h4 {
+        font-weight: 300;
+    }
+
+    & h3 {
+        font-size: 1.5rem;
+    }
+
+    & h2 {
+        font-size: 3rem;
+        color: var(--site-text-highlighted);
+    }
+
+    & p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    & .btn {
+        background-color: var(--site-lighter);
+        padding: 1rem 5rem;
+        margin: 1rem auto;
+
+        & a {
+            font-weight: 600;
+            color: var(--site-bg-lightpurple);
+        }
+    }
+
+    & .copyright {
+        font-size: 0.8rem;
+
+        & a {
+            color: var(--site-lighter);
+        }
+    }
 }
 
 
+
+/* #endregion get_started */
 /* #endregion main */
 
 /* #region footer */
