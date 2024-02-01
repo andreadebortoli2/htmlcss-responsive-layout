@@ -41,3 +41,10 @@ ul {
 nav {
     justify-content: space-between;
 }
+
+/* footer */
+
+#site_footer {
+    color: var(--site-lighter);
+    background-color: var(--site-darker);
+}
