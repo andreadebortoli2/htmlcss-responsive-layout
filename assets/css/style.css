@@ -32,6 +32,11 @@ ul {
     display: flex;
 }
 
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
 .col-12 {
     width: 100%;
 }
@@ -60,6 +65,10 @@ nav {
     background-color: var(--site-bg-lightpurple);
 }
 
+#get_started {
+    color: var(--site-lighter);
+    background-color: var(--site-bg-lightpurple);
+}
 
 
 /* #endregion main */
