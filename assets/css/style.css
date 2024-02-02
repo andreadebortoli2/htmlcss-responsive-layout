@@ -156,6 +156,7 @@ nav {
     }
 
     & p {
+        font-size: 0.8rem;
         padding: 1rem 0;
     }
 }
@@ -460,7 +461,7 @@ footer a {
     .row {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -1rem;    
+        margin: 0 -1rem;
     }
 
     .card {
@@ -506,6 +507,7 @@ footer a {
     }
 
 }
+
 /* #endregion min-width: 768px */
 
 @media screen and (min-width: 992px) {
@@ -516,6 +518,34 @@ footer a {
 
     .col-md-6 {
         width: calc((100% / 12) * 6);
+    }
+
+    .go_to_store {
+        display: flex;
+
+        & :nth-child(2) {
+            align-self: end;
+        }
+    }
+
+    .container-md {
+        width: 60%;
+
+        .col-md-6 {
+            display: flex;
+            
+
+        }
+        .development {
+           max-height: 70%;
+           align-self: flex-end;
+           
+
+           & img {
+               width: 50%;
+           }
+
+       }
     }
 
 }
